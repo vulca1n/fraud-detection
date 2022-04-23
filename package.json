@@ -1,0 +1,19 @@
+{
+  "name": "fraud-detection-demo",
+  "version": "1.0.0",
+  "description": "This is a website operating on a fraud dtecion machine learning model\r  this is the modification\r new modification updated 22/04/2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vulca1n/fraud-detection-demo.git"
+  },
+  "author": "reda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vulca1n/fraud-detection-demo/issues"
+  },
+  "homepage": "https://github.com/vulca1n/fraud-detection-demo#readme"
+}
