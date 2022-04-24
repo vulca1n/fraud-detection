@@ -1,0 +1,29 @@
+{
+    "name": "fraud-detection",
+    "version": "1.0.0",
+    "description": "This is a website operating on a fraud dtecion machine learning model\r  this is the modification\r new modification updated 22/04/2022",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vulca1n/fraud-detection.git"
+    },
+    "author": "reda",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vulca1n/fraud-detection/issues"
+    },
+    "homepage": "https://github.com/vulca1n/fraud-detection#readme",
+    "dependencies": {
+        "axios": "^0.26.1",
+        "body-parser": "^1.20.0",
+        "ejs": "^3.1.7",
+        "express": "^4.17.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
