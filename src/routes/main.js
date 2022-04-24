@@ -14,7 +14,7 @@ router.get('/contact', (req, res, next) => {
 router.get('/about', (req, res, next) => {
     res.render('about')
 })
-router.get('/services', (req, res, next) => {
+router.get('/service', (req, res, next) => {
     res.render('service')
 })
 router.get('/pricing', (req, res, next) => {
