@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const multer = require('multer');
+const uuid = require('uuid').v4;
 const mongoose = require('mongoose');
 const path = require('path');
 const methodOverride = require('method-override')
@@ -8,7 +10,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./src/models/userModel');
 const Routes = require('./src/routes/main');
-
+//const tabledep = require('./src/views/js/main')
+//const upload = multer({dest : 'uploads/'})
 
 
 
@@ -65,9 +68,10 @@ app.use((req, res, next) => {
 
 
 app.use(Routes);
+//app.use(tabledep);
 
 
 
 app.listen(5000, () => {
     console.log("Server Running At port 5000");
-})
+});

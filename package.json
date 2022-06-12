@@ -20,10 +20,13 @@
     "dependencies": {
         "axios": "^0.26.1",
         "body-parser": "^1.20.0",
+        "csv-parser": "^3.0.0",
         "ejs": "^3.1.7",
         "express": "^4.18.1",
         "express-session": "^1.17.3",
+        "handsontable": "^12.0.1",
         "joi": "^17.6.0",
+        "jsdom": "^19.0.0",
         "method-override": "^3.0.0",
         "mongodb": "^4.7.0",
         "mongoose": "^6.3.5",

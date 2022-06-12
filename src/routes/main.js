@@ -30,13 +30,18 @@ router.get('/secret', isLoggedIn, async(req, res) => {
 
     res.render('secret');
 })
+
 router.get('/upload', upload.single('avatar'), async(req, res) => {
 
     res.render('upload')
 })
-router.get('/challenge2', challenges.single('challenger'), async(req, res) => {
+router.get('/upload2', challenges.single('challenger'), async(req, res) => {
 
-    res.render('challenge2')
+    res.render('upload2')
+})
+router.post('/challenge2', challenges.single('challenger'), async(req, res) => {
+
+    res.redirect('/upload2');
 })
 router.post('/secret', upload.single('avatar'), (req, res) => {
 
