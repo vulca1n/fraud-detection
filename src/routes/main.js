@@ -5,6 +5,7 @@ const uuid = require('uuid').v4;
 const User = require('../models/userModel');
 const passport = require('passport');
 const upload = multer({ dest: 'uploads/' });
+const challenges = multer({ dest: 'challenges/' });
 const { isLoggedIn } = require('C:/Users/utilisateur/Desktop/fraud-detection/middleware.js');
 
 
@@ -33,11 +34,16 @@ router.get('/upload', upload.single('avatar'), async(req, res) => {
 
     res.render('upload')
 })
+router.get('/challenge2', challenges.single('challenger'), async(req, res) => {
+
+    res.render('challenge2')
+})
 router.post('/secret', upload.single('avatar'), (req, res) => {
 
 
     res.redirect('/upload');
 })
+
 
 router.get('/service', (req, res, next) => {
     res.render('service')
