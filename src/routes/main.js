@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
+const uuid = require('uuid').v4;
 const User = require('../models/userModel');
 const passport = require('passport');
+const upload = multer({ dest: 'uploads/' });
 const { isLoggedIn } = require('C:/Users/utilisateur/Desktop/fraud-detection/middleware.js');
 
 
@@ -25,6 +28,15 @@ router.get('/secret', isLoggedIn, async(req, res) => {
     const user = await User.findById(req.user._id);
 
     res.render('secret');
+})
+router.get('/upload', upload.single('avatar'), async(req, res) => {
+
+    res.render('upload')
+})
+router.post('/secret', upload.single('avatar'), (req, res) => {
+
+
+    res.redirect('/upload');
 })
 
 router.get('/service', (req, res, next) => {
