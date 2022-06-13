@@ -6,7 +6,7 @@ const User = require('../models/userModel');
 const passport = require('passport');
 const upload = multer({ dest: 'uploads/' });
 const challenges = multer({ dest: 'challenges/' });
-const { isLoggedIn } = require('C:/Users/utilisateur/Desktop/fraud-detection/middleware.js');
+const { isLoggedIn } = require('../../middleware.js');
 
 var bodyParser = require("body-parser");
 
