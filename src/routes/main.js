@@ -8,7 +8,11 @@ const upload = multer({ dest: 'uploads/' });
 const challenges = multer({ dest: 'challenges/' });
 const { isLoggedIn } = require('C:/Users/utilisateur/Desktop/fraud-detection/middleware.js');
 
+var bodyParser = require("body-parser");
 
+var fileUpload = require('express-fileupload');
+const { PythonShell } = require("python-shell");
+var sys = require('util');
 
 
 router.get('/', (req, res, next) => {
@@ -31,10 +35,7 @@ router.get('/secret', isLoggedIn, async(req, res) => {
     res.render('secret');
 })
 
-router.get('/upload', upload.single('avatar'), async(req, res) => {
 
-    res.render('upload')
-})
 router.get('/upload2', challenges.single('challenger'), async(req, res) => {
 
     res.render('upload2')
@@ -43,11 +44,14 @@ router.post('/challenge2', challenges.single('challenger'), async(req, res) => {
 
     res.redirect('/upload2');
 })
-router.post('/secret', upload.single('avatar'), (req, res) => {
+router.get('/challenge2', isLoggedIn, async(req, res) => {
 
+    const user = await User.findById(req.user._id);
 
-    res.redirect('/upload');
+    res.render('challenge2');
 })
+
+
 
 
 router.get('/service', (req, res, next) => {
