@@ -1,7 +1,7 @@
 # fraud-detection-demo
-This is a web application operating a fraud detection machine learning model  that was created with the collaboration of @	AyoubEzz99\n
-the latest code files are include in fraud-detection v2\n
-to run the application you need to:
+This is a web application operating a fraud detection machine learning model  that was created with the collaboration of @	AyoubEzz99  
+the latest code files are include in fraud-detection v2  
+to run the application you need to:  
 1/cd into the fraud-detection v2 directory
 2/ install necessary modules with npm install
 3/ npm start to run the server
