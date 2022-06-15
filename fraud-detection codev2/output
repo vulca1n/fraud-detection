@@ -1,0 +1,1 @@
+[{"name": "LogisticRegression", "accuracy": 0.8756218905472637, "prediction": 1}, {"name": "KNeighbors", "accuracy": 0.900497512437811, "prediction": 1}, {"name": "SVC(linear)", "accuracy": 0.8855721393034826, "prediction": 1}, {"name": "Random Forest", "accuracy": 0.9601990049751243, "prediction": 1}]
